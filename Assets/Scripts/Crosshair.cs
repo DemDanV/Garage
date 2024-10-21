@@ -7,7 +7,7 @@ namespace Garage
 {
     public class Crosshair : MonoBehaviour
     {
-        public RawImage expanding; //the image that is expanded when the gun shoots
+        [SerializeField] private RawImage expanding; //the image that is expanded when the gun shoots
 
         [SerializeField] private float animationsSpeed; // how fast the recoil settles
         [SerializeField] private float crosshairMaxScale; //maximum size of the expanding crosshair

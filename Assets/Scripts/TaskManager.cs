@@ -51,7 +51,8 @@ namespace Garage
         {
             foreach (var item in itemsToMove)
             {
-                item.OnItemDropped -= OnItemMoved;
+                if (item != null)
+                    item.OnItemDropped -= OnItemMoved;
             }
         }
     }
